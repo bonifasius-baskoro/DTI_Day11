@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.datastructure.LinkedListMethod;
-import org.example.datastructure.Node;
-import org.example.datastructure.QueueTry;
+import org.example.datastructure.*;
+
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,6 +40,21 @@ public class Main {
 
 
         System.out.println("Stackk-----");
+        StackTry stackTest = new StackTry(head);
+        stackTest.pushStack(node2);
+        System.out.println(stackTest.getPeek().data);
+        stackTest.pushStack(node3);
+        System.out.println(stackTest.getPeek().data);
+        stackTest.popStack();
+        System.out.println("pop3 ");
+        System.out.println(stackTest.getPeek().data);
+        stackTest.popStack();
+        System.out.println("pop2");
+        System.out.println(stackTest.getPeek().data);
+        stackTest.popStack();
+
+        System.out.println("Binary tree");
+        BinaryTreeInterface.run();
 
     }
 }
